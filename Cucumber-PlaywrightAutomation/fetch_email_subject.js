@@ -1,8 +1,9 @@
 const fs = require('fs');
 const readline = require('readline');
 const {google} = require('googleapis');
-const { userAccount, mail_details } = require('../fixtures/data.json');
+const { userAccount, mail_details } = require('../Cucumber-PlaywrightAutomation/fixtures/data.json');
 
+console.log("hello")
 const mail = mail_details.user_1;
 // If modifying these scopes, delete token.json.
 const SCOPES = ['https://www.googleapis.com/auth/gmail.readonly'];
@@ -132,6 +133,7 @@ function printMessage(messageID,auth) {
 //    else {
 //      console.log("All Done");
 //    }
+
 });
 }
 

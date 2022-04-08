@@ -2,7 +2,8 @@ const { assert, expect } = require('chai');
 const { BaseAction } = require('../setup/baseAction');
 const Mailosaur = require('mailosaur')
 
-
+    // const result = Math.random().toString(36).substring(2,7);
+    // console.log(result);
 
 exports.Homepage = class Homepage extends BaseAction {
 
@@ -33,6 +34,8 @@ exports.Homepage = class Homepage extends BaseAction {
         msg : "#message",
         sendMail : 'input[type="submit"]',
     };
+
+    
 
     validationText = {
         emailSentNotification: "Success",
